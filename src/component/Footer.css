@@ -1,0 +1,25 @@
+.footer-wrap{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: space-around;
+  padding: 40px;
+  background-color: #282c34;
+border-top: 4px solid #61dafb;
+}
+.tab{
+  flex-direction: column;
+  color: aliceblue;
+  text-align: left;
+}
+a{
+  display: block;
+  line-height: 24px;
+  
+}
+a:hover{
+  cursor: pointer;
+  color: #61dafb;
+}
