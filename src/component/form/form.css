@@ -1,0 +1,57 @@
+label{
+  display: block;
+}
+.container{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}
+.form-wrap{
+  width: 500px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  align-content: stretch;
+  text-align: left;
+  line-height: 50px;
+  font-size: 22px;
+}
+label{
+  width: 100%;
+  font-size: 24px;
+  color: rgb(97, 218, 251);
+}
+.form-group input{
+  height: 30px;
+  width: 100%;
+  
+}
+.form-group select{
+  height: 30px;
+  width: 100%;
+}
+button{
+  line-height: 40px;
+  margin-top: 20px;
+  background-color: #282c34;
+  color: aliceblue;
+}
+table{
+  line-height: 30px;
+  border-collapse: collapse;
+  border: 1px solid rgb(97, 218, 251);
+}
+th {
+  padding: 5px;
+  border: 1px solid rgb(97, 218, 251);
+  width: 100px;
+}
+td{
+  padding: 5px;
+  border: 1px solid rgb(97, 218, 251);
+}

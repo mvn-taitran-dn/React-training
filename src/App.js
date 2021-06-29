@@ -4,6 +4,7 @@ import './App.css';
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import Home from "./component/Home"
+import SignUpForm from "./component/form/SignUpForm.js"
 
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       color: false,
-      page: 'home'
+      page: 'form'
     };
     this.toggleColor = this.toggleColor.bind(this);
   }
@@ -28,6 +29,7 @@ class App extends Component {
       page
     });
   }
+
   render(){ 
     const { color, page }  = this.state;
     return (
@@ -35,10 +37,12 @@ class App extends Component {
       <Header/>
       <main className="page-main">
           {/* <button onClick={this.toggleColor}>Toggle Color</button> */}
-          <button className="menu-tab" onClick={() => this.handleChangePage('home')}>Page Home</button>
-          <button className="menu-tab" onClick={() => this.handleChangePage('about')}>Page About</button>
+          <div class="menu-wrap">
+            <button className="menu-tab" onClick={() => this.handleChangePage('form')}>Page Form</button>
+            <button className="menu-tab" onClick={() => this.handleChangePage('home')}>Page Home</button>
+          </div>
+          {(page === 'form') && <div className="circles"><SignUpForm /></div>}
           {(page === 'home') && <div className="circles"><Home /></div>}
-          {(page === 'about') && <div className="circles">About page</div>}
       </main>
       <Footer />
     </div>

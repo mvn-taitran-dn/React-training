@@ -37,6 +37,10 @@
     transform: rotate(360deg);
   }
 }
+.menu-wrap{
+  width: 100%;
+  background-color: #282c34;
+}
 .menu-tab {
   width: 200px;
   height: 100px;
