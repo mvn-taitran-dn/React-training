@@ -3,14 +3,15 @@ import Button from '../Button';
 import CountdownCircle from './CountdownCircle';
 
 interface CountdownItemProps {
-  startFrom: Number;
+  startFrom: number;
+  size: number;
 }
 
 const CountdownItem: React.FC<CountdownItemProps> = ({ size, startFrom = 10 }) => {
 
   const [state, setState] = useState("Start");
 
-  const handleClick = (e) => {
+  const handleClick = (e: any) => {
     if (state === "Stop") {
       setState("Start")
     } else {

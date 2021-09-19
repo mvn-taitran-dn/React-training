@@ -5,12 +5,12 @@ const Countdown: React.FC = () => {
 
   return (
     <>
-      <div className="  " style={{
+      <div className="" style={{
         display: "flex"
       }}>
-        <CountdownItem  startFrom={10} />
-        <CountdownItem  startFrom={20} />
-        <CountdownItem  startFrom={30} />
+        <CountdownItem startFrom={10} />
+        <CountdownItem startFrom={20} />
+        <CountdownItem startFrom={30} />
       </div>
     </>
   );
